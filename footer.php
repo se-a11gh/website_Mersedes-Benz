@@ -1,7 +1,7 @@
 
 <footer id="footer_Mers">
 
-    <div class="bl_FooterSoc"> 
+    <div class="bl_FooterSoc">  
         <div class="IconSoc">
                 <div class="wrapIconSoc">
                 <img class="img_ic" src="media/card2.png" alt="">
