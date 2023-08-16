@@ -32,70 +32,42 @@
     .mersTable {
         margin-top: 50px;
     }
+}/*------------------------------------------------------------------------------------ 1250px --------*/
     
     
-    
-    
-    .block_go_text{
-        font-size: 16px;
+@media (max-width: 1200px) { 
+    .go_animation {
+        width: 63%;
+        /* background-size: 665px 450px; */
+    }    
+    #svg1 {
+        width: 592px;
     }
-    .go_text p{
-        font-size: 21px;
+    .block_go {
+        justify-content: space-between;
     }
-    
-    .go_form{
-        font-size: 18px;
-    }
-    
-    
-    }/*------------------------------------------------------------------------------------ 1250px --------*/
-    
-    
-    
-    
-    @media (max-width: 1200px) { 
-        .go_animation {
-            width: 63%;
-        }    
-        .block_go {
-            justify-content: space-between;
-        }
-    
-    
     .big_foto div img, .foto_3 video {
         width: 100%;
     }
     .wrap_img11 img {
         width: 110%;
     }
-    }/*------------------------------------------------------------------------------------ 1200px --------*/
+}/*------------------------------------------------------------------------------------ 1200px --------*/
     
     
     
-    @media (max-width: 1150px) { 
-        .block_go_text {
-            width: 41.5%;
-        }
-        .go_text {
-            width: 85%;
-            margin-left: 35px;
-            font-size: 16px;
-        }
-        .go_text p {
-            font-size: 21px;
-        }
-        .go_form {
-            width: 99%;
-            font-size: 18px;
-            margin-left: 5px;
-        }
-    
-    
+@media (max-width: 1150px) { 
+    .block_go_text {
+        width: 41.5%;
+    }
+    .go_text {
+        width: 410px;
+    }
+    .go_form {
+        width: 100%;
+    }
     .foto_price {
         top: 85%;
-    }
-    .model_auto_name {
-        font-size: calc(var(--index) * 1.5);
     }
     .img_ic {
         width: 26px;
@@ -116,25 +88,22 @@
     .Info_slidePrice span{
         font-size: 20px;
     }
-    }/*------------------------------------------------------------------------------------ 1150px --------*/
+}/*------------------------------------------------------------------------------------ 1150px --------*/
     
     
     
-    
-    @media (max-width: 1100px) { 
-        .block_go_text {
-            width: 810px;
-        }
-    
-    
-    
-    
-    
-    
-    .wrap_img11 img {
-        height: 300px;
+@media (max-width: 1100px) { 
+    .go_text {
+        width: 600px;
     }
-    .wrap_img_info2, .wrap_img_info1 {
+    .block_go_text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 810px;
+    }
+    
+    .wrap_img_info2, .wrap_img_info1, .wrap_img11 img {
         height: 300px;
     }
     .wrap_img img {
@@ -166,36 +135,26 @@
     }
     .go_animation {
         width: 750px;
+        background-size: 750px 450px;
     }
-    
-    
+    #svg1 {
+        width: 675px;
+    }
     .block_go {
         height: auto;
         flex-direction: column;
+        align-items: center;
     }
-    
-    
     .autoType_1 {
         width: 100%;
     }
     .autoType_11 {
         width: 80%;
     }
-    .model_auto {
-        height: 285px;
-        padding: 30px;
-    }
-    .catalog_auto {
-        height: 750px;
-    }
-    .img_ic__next{
-        width: 24px;
-        height: 24px;
-    }
-    }/*------------------------------------------------------------------------------------------ 1100px ----*/
+}/*------------------------------------------------------------------------------------------ 1100px ----*/
     
     
-    @media (max-width: 1000px) { 
+@media (max-width: 1000px) { 
     .big_foto {
         height: 550px;
     }
@@ -235,10 +194,6 @@
     .img_descrAuto1 {
         width: 50%;
     }
-    
-    
-    
-    
     .wrapIconSoc {
         width: 40px;
         height: 40px;
@@ -279,21 +234,19 @@
         padding: 13px;
         font-size: 13px;
     }
+    .model_auto_name {
+        font-size: 20px;
+    }
+    .img_ic {
+        width: 20px;
+        height: 20px;
+    }
     }/*----------------------------------------------------------------------------------------------- 1000px -------------*/
     
     
     
     @media (max-width: 975px) { 
-    .model_auto_name {
-        font-size: calc(var(--index) * 1.4);
-    }
-    .model_auto {
-        height: 240px;
-        padding: 25px;
-    }
-    .catalog_auto {
-        height: 600px;
-    }
+
     .bl_slideFoto img {
         width: 112%;
         height: 720px;
@@ -320,12 +273,13 @@
     .mersTable {
         margin-top: 50px;
     }
-    }/*----------------------------------------------------------------------------------------------- 950px -------------*/
+}/*----------------------------------------------------------------------------------------------- 950px -------------*/
+        
     
-    
-    
-    
-    @media (max-width: 900px) { 
+@media (max-width: 900px) { 
+    .model_auto {
+        width: 255px;
+    }
     .avto2_Down_info {
         width: 330px;
         height: 90px;
@@ -380,12 +334,16 @@
         font-size: 13px;
     }
     
-    
-    }/*------------------------------------------------------------------------------------ 900px ----------*/
-    
+}/*------------------------------------------------------------------------------------ 900px ----------*/
     
     
-    @media (max-width: 850px) { 
+@media (max-width: 850px) { 
+    .linkModel {
+        font-size: 16px;
+    }
+    .model_auto {
+        width: 275px;
+    }
     .block_go_text {
         width: 750px;
     }
@@ -427,16 +385,6 @@
     label img {   
         height: 100px;
     }
-    .img_ic__next{
-        width: 22px;
-        height: 22px;
-    }
-    .model_auto {
-        height: 215px;
-    }
-    .catalog_auto {
-    height: 550px;
-    }
     
     .MenuListName p {
         font-size: 15px;
@@ -452,17 +400,13 @@
         width: 165px;
         height: 150px;
     }
-    }/*------------------------------------------------------------------------------------------- 850px ----------*/
+}/*------------------------------------------------------------------------------------------- 850px ----------*/
     
     
-    
-    
-    @media (max-width: 800px) { 
-        .block_go_text {
-            width: 655px;
-        }
-    
-    
+@media (max-width: 800px) { 
+    .block_go_text {
+        width: 655px;
+    }
     .mersTable{
         font-size: 13px;
     }
@@ -498,41 +442,29 @@
     }
     .descrip_auto p {
         font-size: 16px;
-    }
-    
+    } 
     .block_go {
         margin-top: 70px;
-    }
-    .pointMove {
-        top: 18%;
-        left: 5%;
-        width: 15px;
-        height: 15px;
-        offset-path: path("M0.89489 116.512L46.4996 104L87 140.5L125 160L140 179.5L153.5 160L200 179.5L249 195L286 222L338.5 264.5L384 241L384 190L426.5 112.5L448.5 95.5L489.5 90.5L518.5 51L533.895 35.5L533.895 0.511806");  
     }
     .go_animation {
         width: 600px;
         height: 400px;
-        background-size: 668px 385px;
+        background-size: 600px 385px;
+    } 
+    #svg1 {
+        width: 540px;
+        top: 115px;
+        left: 24px;
+        height: 250px;
     }
-    
-    
-    
     .Block_video {
         width: 90%;
     }
     
+}/*------------------------------------------------------------------------------------------- 800px ----------*/
     
     
-    
-    
-    }/*------------------------------------------------------------------------------------------- 800px ----------*/
-    
-    
-    
-    
-    
-    @media (max-width: 750px) { 
+@media (max-width: 750px) { 
     .Info_slideContent{
         display: flex;
         justify-content: space-around;
@@ -546,16 +478,6 @@
         height: 20px;
     }.subdiv_icon1, .subdiv_icon2 {
         width: 50px;
-    }
-    .model_auto {
-        height: 200px;
-        width: 36%;
-    }
-    .catalog_auto {
-        height: 650px;
-    }
-    .btn_slide, .btn_slide_1, .btn_slide_2, .btn_slide_3 {
-        height: 40px;
     }
     .blockInfo_slide {
         top: 67%;
@@ -622,8 +544,6 @@
     .blockLogoFooter {
        margin-bottom: 10px;
     }
-    
-    
     
     .arrowList{
         display: block;
@@ -714,10 +634,20 @@
     
     
     @media (max-width: 650px) { 
+
+        .model_auto {
+            width: 350px;
+        }
+
         .block_go_text {
-            width: 90%;
+            width: 525px;
         }
     
+        .go_text {
+            width: 460px;
+        }
+
+
     .panelUP h1 {
         font-size: 21px;
     }
@@ -753,32 +683,20 @@
         width: 100%;
     }
     .go_animation {
-        width: 420px;
-        height: 300px;
-        background-size: 420px 300px;
+        width: 480px;
+        height: 285px;
+        background-size: 480px 300px;
     }
-    .pointMove {
-        top: 21%;
-        left: 5%;
-        width: 10px;
-        height: 10px;
-        offset-path: path("M0.87207 86.5164L37.5 77L67.5 116L94 131.5L98.5 116L129 137.5L153 143L186.5 175.5L213 201L233.5 186L238.5 137.5L262.5 86.5164L276 69.5L296.5 69.5L311.5 48.5L327.872 27L327.872 0.516357");  
+    #svg1 {
+        width: 430px;
+        top: 62px;
+        left: 20px;
     }
-    
-    
-    
-    .model_auto {
-        height: 165px;
-        width: 40%;
-        padding: 17px;
+    .go_text p {
+        font-size: 20px;
     }
-    .model_auto_name {
-        font-size: 18px;
-        justify-content: space-between;
-    }
-    .img_ic__next {
-        width: 20px;
-        height: 20px;
+    .go_text p:nth-child(2) {
+        font-size: 17px;
     }
     }/*------------------------------------------------------------------------------------------- 650px ----------*/
     
@@ -829,6 +747,18 @@
     
     
     @media (max-width: 550px) { 
+        .go_animation {
+            width: 440px;
+            background-size: 440px 300px;
+        }
+        #svg1 {
+            width: 393px;
+        }        
+        .block_go_text {
+            width: 495px;
+        }
+
+
     .wrap_image1 img {
         width: 110%;
     }
@@ -870,102 +800,108 @@
     
     @media (max-width: 480px) { 
     .block_go_text {
-        width: 100%;
+        width: 400px;
     }
     .go_text {
-        width: 85%;
-        margin-left: 35px;
-        font-size: 14px;
+        width: 100%;
     }
     .go_text p {
-        font-size: 18px;
-    }
-    .go_form {
-        width: 99%;
         font-size: 16px;
-        margin-left: 5px;
+    }
+    .go_text p:nth-child(2) {
+        font-size: 14px;
+    }
+
+
+    .go_form {
+        width: 100%;
     }
     .go_form input {
         height: 35px;
     }
     .go_form .btn_more {
-        height: 45px;
+        height: 50px;
+        margin-top: 10px;
+        font-size: 17px;
     }
     
-        .wrap_image1 img {
-            width: 125%;
-            height: 350px;
-            margin-left: -50px;
-        }
-        .asideMenuContent {
-            width: 350px;
-        }
-        .asideMenu {
-            width: 430px;
-        }
-        .go_animation {
-            width: 400px;
-            background-size: 410px 300px;
-        }
-        .model_auto {
-            height: 175px;
-            width: 45%;
-      padding: 10px;
-        }
-    
-    
-        .panelUP p {
-            margin-left: 10px;
-            font-size: 13px;
-        }
-        .panelUP h1 {
-            font-size: 17px;
-        }
-        .priceInfo{
-            width: 360px;
-        }
-        .mersTable {
-            width: 92%; 
-            font-size: 11px;
-        }
-        .mersTable tr th {
-            padding: 5px;
-        }
-        .mersTable td {
-            padding: 10px;
-        }
-        .blockLogoMenu {
-            width: 65%;
-        }
-    
-        .wrapMenuList,  .bl_FooterMenu {
-            width: 100%;
-            padding: 0px;
-        }
-        .MenuListName {
-           border: none;
-        }
-        .MenuListName {
-            border-bottom: 1px solid white;
-            padding: 20px;
-        }
+    .wrap_image1 img {
+        width: 125%;
+        height: 350px;
+        margin-left: -50px;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    @media (max-width: 410px) { 
-    
-    .go_animation {
+    .asideMenuContent {
         width: 350px;
-        background-size: 428px 300px;
-        background-position: -10px 6px;
     }
+    .asideMenu {
+        width: 430px;
+    }
+    .go_animation {
+        width: 375px;
+        background-size: 380px 255px;
+    }
+    #svg1 {
+        width: 335px;
+        height: 230px;
+        top: 43px;
+    }
+    .model_auto {
+        width: 320px;
+        height: 240px;
+    }
+    .autoType_1 {
+        width: 67%;
+        margin: 13% 17%;
+    }
+    .panelUP p {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    .panelUP h1 {
+        font-size: 17px;
+    }
+    .priceInfo{
+        width: 360px;
+    }
+    .mersTable {
+        width: 92%; 
+        font-size: 11px;
+    }
+    .mersTable tr th {
+        padding: 5px;
+    }
+    .mersTable td {
+        padding: 10px;
+    }
+    .blockLogoMenu {
+        width: 65%;
+    }   
+    .wrapMenuList,  .bl_FooterMenu {
+        width: 100%;
+        padding: 0px;
+    }
+    .MenuListName {
+        border: none;
+    }
+    .MenuListName {
+        border-bottom: 1px solid white;
+        padding: 20px;
+    }
+}
     
+
+@media (max-width: 410px) { 
+
+        .go_animation {
+        width: 347px;
+        background-size: 350px 250px;
+    }
+    #svg1 {
+        width: 315px;
+        height: 220px;
+        top: 45px;
+        left: 14px;
+    }
     
     .Info_slideName, .btn_Info_slide {
         font-size: 20px;
@@ -979,26 +915,16 @@
     .Info_slideProp p {
         font-size: 13px;
     }
-    
-    .btn_slide, .btn_slide_1, .btn_slide_2, .btn_slide_3 {
-        width: 155px;
-        font-size: 17px;
-        border-radius: 3px;
-    }
     .linkModel {
         margin-top: 20px;
-        font-size: 17px;
     }
-    
     .blockLogo img {
         width: 45px;
         height: 45px;
     }
-    
     .head_right {
         padding: 2px;
     }
-    
     .img_chat, .img_call {
         width: 23px;
         height: 23px;
@@ -1024,35 +950,8 @@
     .wrapIconSupp {
         font-size: 12px;
     }
-    
     .IconSupp {
         width: 250px;
     }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     

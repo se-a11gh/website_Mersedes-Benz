@@ -1,4 +1,6 @@
 <?php require('header.php');?>
+
+
 <main id="main_Mers">
 <div class="Slider">
   <div class="slider_line">
@@ -23,10 +25,10 @@
     <div class="info_left">
     <div class="Info_slidePrice"> <span> /міс.</span> </div>
     <div class="btn_Info_slide">
-     <a href="templateAuto.php"> <button class="btn_slide" type="button">Детальніше</button></a>
-     <a href="templateAuto.php"> <button class="btn_slide_1" type="button">Детальніше</button></a>
-     <a href="templateAuto.php"> <button class="btn_slide_2" type="button">Детальніше</button></a>
-     <a href="templateAuto.php"> <button class="btn_slide_3" type="button">Детальніше</button></a>
+      <div class="btn_slide btn_sld_1"><a href="templateAuto.php">Детальніше</a></div>
+     <div class="btn_slide btn_sld_2"><a href="templateAuto.php">Детальніше</a></div>
+     <div class="btn_slide btn_sld_3"><a href="templateAuto.php">Детальніше</a></div>
+     <div class="btn_slide btn_sld_4"><a href="templateAuto.php">Детальніше</a></div>
     </div>
 
     <a class="linkModel" href="models.php">див. Інші моделі</a>
@@ -34,8 +36,6 @@
   </div>
 
   </div>
-</div>
-
 </main>
 <!-------------------------------------------------------------------->
 
@@ -73,7 +73,7 @@
 
   <div class="Block_video">
   <div class="video_Mers">
-  <video loop muted src="media/vid_mers.mp4" type="video/mp4" autoplay > </video>
+  <video loop muted src="media/vid_mers.mp4" autoplay > </video>
   </div>
   </div>
 
@@ -113,21 +113,34 @@
 <!----------------------------------------------------------------------------------->
 <div class="block_go">
 
-  <div class="go_animation"><div class="pointMove"></div></div>
+  <div class="go_animation">
+    
+
+<svg id="svg1" width="669" height="299" viewBox="0 0 669 299" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="pp" d="M1.5 144.5L34.5 136.5L50.5 129L65.5 144.5L102.5 167.5L127 193H149L169.5 221.5L187 202L208 213.5L228.5 242L288.5 225.5L325.5 255L320.5 280.5H357L368 286.5L382.5 280.5H412L436 293.5L445.5 269H473L454 230.5L494 202L504 173.5L527.5 136.5L553 119H576L611.5 103.5L632.5 66L659 48.5L665.5 0.5" stroke="#F45353" stroke-width="5">
+<animate  begin="svg1" attributeName="stroke-dashoffset" values="987; 0" repeatCount="1" fill="freeze">
+</animate>
+</path>
+</svg>
+
+</div>
 
 
     <div class="block_go_text"> 
     <div class="go_text">
        <p>З Львова до Києва за 1,5 години без підзарядки!</p>
-        Нові акумулятори збільшили запас ходу на 15%, а наш новий
-        електродвигун здатний розвивати швидкість до 550 км/год.
+       <p>
+       Нові акумулятори збільшили запас ходу на 15%, а наш новий
+      електродвигун здатний розвивати швидкість до 550 км/год.
+</p>
+<p>
+      Робіть попереднє замовлення і насолоджуйтесь швидкістю.
+      Поспішайте кількість моделей обмежено!
+       </p>
     </div>   
-    <form class="go_form" action="" method="">
-          <p class="textForm">
-            Робіть попереднє замовлення і насолоджуйтесь швидкістю.<br>
-          Поспішайте кількість моделей обмежено!</p>
-          <input type="text" name="" placeholder="ПІБ">
-          <input type="text" name="" placeholder="+380XXXXXXXXXX">
+    <form class="go_form" action="#" method="post">
+          <input type="text" name="nameOrd" placeholder="ПІБ">
+          <input type="text" name="phoneOrd" placeholder="+380XXXXXXXXXX">
         <input class="btn_more" type="submit" value="Замовити">
       </form>
     </div>
@@ -146,38 +159,38 @@
 <div class="catalog_auto">
 
   <div class="model_auto">
-  <div class="model_auto_name"><p>Седани</p><a href="models.php"><img class="img_ic img_ic__next" src="media/next.png" alt=""></a></div>
+  <div class="model_auto_name"><p>Седани</p><a href="models.php"><img class="img_ic img_ic__next" src="media/nextCateg.png" alt=""></a></div>
   <a href="models.php"><img class="autoType_1" src="media/model1.png" alt=""></a>
   </div>
 
   <div class="model_auto">
-  <div class="model_auto_name"><p>Позашляховики</p><a href="models.php"><img class="img_ic img_ic__next" src="media/next.png" alt=""></a></div>
+  <div class="model_auto_name"><p>Позашляховики</p><a href="models.php"><img class="img_ic img_ic__next" src="media/nextCateg.png" alt=""></a></div>
   <a href="models.php"><img class="autoType_1" src="media/model5.png" alt=""></a>
   </div>
 
   <div class="model_auto">
-  <div class="model_auto_name"><p>Купе</p><a href="models.php"><img class="img_ic img_ic__next" src="media/next.png" alt=""></a></div>
+  <div class="model_auto_name"><p>Купе</p><a href="models.php"><img class="img_ic img_ic__next" src="media/nextCateg.png" alt=""></a></div>
   <a href="models.php"><img class="autoType_1" src="media/model2.png" alt=""></a>
   </div>
 
   <div class="model_auto">
-  <div class="model_auto_name"><p>Мінівени</p> <a href="models.php"><img class="img_ic img_ic__next" src="media/next.png" alt=""></a> </div>
+  <div class="model_auto_name"><p>Мінівени</p> <a href="models.php"><img class="img_ic img_ic__next" src="media/nextCateg.png" alt=""></a> </div>
   <a href="models.php"><img class="autoType_1" src="media/model4.png" alt=""></a>
   </div>
 
   <div class="model_auto">
-  <div class="model_auto_name"><p>Універсали</p><a href="models.php"><img class="img_ic img_ic__next" src="media/next.png" alt=""></a></div>
+  <div class="model_auto_name"><p>Універсали</p><a href="models.php"><img class="img_ic img_ic__next" src="media/nextCateg.png" alt=""></a></div>
   <a href="models.php"><img class="autoType_1" src="media/carMers.png" alt=""></a>
   </div>
   
   <div class="model_auto">
-  <div class="model_auto_name"><p>Хетчбеки</p> <a href="models.php"><img class="img_ic img_ic__next" src="media/next.png" alt=""></a> </div>
+  <div class="model_auto_name"><p>Хетчбеки</p> <a href="models.php"><img class="img_ic img_ic__next" src="media/nextCateg.png" alt=""></a> </div>
   <a href="models.php"><img class="autoType_1" src="media/model3.png" alt=""></a>
   </div>
 
 </div>
 
-
 </section>
+
 
 <?php require('footer.php');?>

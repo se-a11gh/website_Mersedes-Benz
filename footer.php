@@ -1,7 +1,8 @@
 
+
 <footer id="footer_Mers">
 
-    <div class="bl_FooterSoc">  
+    <div class="bl_FooterSoc">
         <div class="IconSoc">
                 <div class="wrapIconSoc">
                 <img class="img_ic" src="media/card2.png" alt="">
@@ -30,7 +31,7 @@
     <div class="bl_FooterMenu">
       <div class="wrapMenuList">
         <div class="MenuListName"><p>Сервіс</p><img class="arrowList" src="media/strela_L2.png" alt=""> 
-        <ul name="sublist" class="MenuList_sub">
+        <ul class="MenuList_sub">
           <li>Запис на ТО</li>
           <li>Оригінальні аксесуари</li>
           <li>Шини, диски та колеса</li>
@@ -41,7 +42,7 @@
       </div>
       <div class="wrapMenuList">
    <div class="MenuListName"><p>Фінансові послуги</p><img class="arrowList" src="media/strela_L2.png" alt=""> 
-        <ul name="sublist" class="MenuList_sub">
+        <ul class="MenuList_sub">
           <li>Кредитування</li>
           <li>Лізинг</li>
           <li>Страхування</li>
@@ -50,7 +51,7 @@
     </div>
     <div class="wrapMenuList">
     <div class="MenuListName"><p>Світ Mercedes-Benz</p><img class="arrowList" src="media/strela_L2.png" alt=""> 
-        <ul name="sublist" class="MenuList_sub">
+        <ul class="MenuList_sub">
         <li>Спорт</li>
           <li>Інноваційна діяльність</li>
           <li>Дизайн</li>
@@ -61,7 +62,7 @@
     <div class="wrapMenuList">
     <div class="MenuListName">
       <p>Про нас</p><img class="arrowList" src="media/strela_L2.png" alt=""> 
-        <ul name="sublist" class="MenuList_sub">
+        <ul class="MenuList_sub">
         <li>Контакти</li>
           <li>Новини</li>
           <li>Дилерський центр</li>
@@ -85,15 +86,9 @@
     </div>
 
 </footer>
-
-
 </div><!--- END Wrapper ---->
 
-
-<!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> -->
-
-
-
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script src="mers.js"></script>
 <script src="slider.js"></script>
 

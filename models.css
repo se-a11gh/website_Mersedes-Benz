@@ -210,26 +210,6 @@ input[name="x"]{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .wrap_models{
     display: flex;
     flex-direction: column;
@@ -237,14 +217,9 @@ input[name="x"]{
     width: 100%;
     height: auto;
 }
-/*---------------------------------------------------*/
-
-
 .block_models_panel{
-
     width: 100%;
 }
-
 .panelUP{
     display: flex;
     align-items: center;
@@ -262,7 +237,6 @@ input[name="x"]{
     padding: 5px;
     box-sizing: border-box;
 }
-
 .menu_models_main{
     padding: 20px;
     box-sizing: border-box;
@@ -284,7 +258,6 @@ input[name="x"]{
     border-bottom: 2px solid #2D3C52; 
     font-weight: bold;
 }
-
 .menu_models_list_DOP{
     display: none;
     width: 100%;
@@ -293,7 +266,6 @@ input[name="x"]{
     padding: 15px;
     box-sizing: border-box;
 }
-
 .menu_models_list_DOP ul{
    flex-direction: column;
 }
@@ -307,9 +279,6 @@ input[name="x"]{
     font-weight: bold;
     padding: 3px;
 }
-
-
-
 .menu_models_subdiv {
     display: flex;
     justify-content: center;
@@ -348,9 +317,6 @@ input[name="x"]{
     padding: 20px;
     box-sizing: border-box; 
 }
-
-
-
 .card_model{
     display: flex;
     flex-direction: column;
@@ -397,15 +363,12 @@ a{
     display: flex;
 }
 
-
-
 .btnOrder{
     width: 180px;
     height: 35px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    color: white;
     padding: 7px;
     box-sizing: border-box;
     margin-bottom: 10px;
@@ -416,8 +379,12 @@ a{
 }.btnOrder:hover{
     background-color: #BC8235;
     border: none;
-    color: white;
 }.btnOrder:active{
     background-color: #7a4706;
 }
-
+.btnOrder a{ 
+    color: #995b0a;
+  }
+.btnOrder:hover a{ 
+  color: white;
+}

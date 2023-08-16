@@ -19,7 +19,7 @@
 <div class="big_foto">
       <div class="foto_1"><img src="media/m_22.jpg" alt=""></div>
       <div class="foto_2"><img src="media/eq1.jpeg"  alt=""></div>
-      <div class="foto_3"><video loop muted src="media/vid_mers.mp4" type="video/mp4" autoplay > </video></div>
+      <div class="foto_3"><video loop muted src="media/vid_mers.mp4" autoplay></video></div>
       <div class="foto_4"><img src="media/eq22.jpg" alt=""></div>
 </div>
 

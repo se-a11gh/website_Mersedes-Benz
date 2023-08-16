@@ -12,19 +12,21 @@
 <body>
 <?php require('../Site_7/return.php');?>
 
-
 <div class="wrap_PopUP_avto">
     <div class="block_PopUP_avto">
       <img class="btnClosePop" src="media/wClose.png" alt="">
-      <p>Залишіть свої контакти і наш менеджер з вами зв'яжеться. </p>
-      <form class="PopUP_avto_form" action="" method="post">
-        <input type="text" name="" placeholder="ПІБ">
-        <input type="text" name="" placeholder="+3809XXXXXXX">
-        <input type="text" name="" placeholder="Email-адрес">
-        <input class="btnPop" type="submit" name="" value="Відправити запит">
+      <div class="PopUP_avto_name"><p>Залишіть свої контакти і наш менеджер з вами зв'яжеться. </p></div>
+      <form class="PopUP_avto_form" action="#" method="post">
+        <input type="text" name="nameU" placeholder="ПІБ">
+        <input type="text" name="phoneU" placeholder="+3809XXXXXXX">
+        <input type="text" name="emailU" placeholder="Email-адрес">
+        <input class="btnPop" type="submit" name="btnSend" value="Відправити запит">
       </form>
     </div>
 </div>
+
+
+
 
 
 
@@ -42,19 +44,22 @@
       <div class="PopUP_avto2_Down">
         <!-------------------------------------------------->
       <div class="avto2_Down_info">
-        <ul>Актуальні новини та заходи
+        <p>Актуальні новини та заходи</p>
+        <ul>
           <li>Огляд головних новин «Мерседес-Бенц»</li>
         </ul>
       </div>
       <!-------------------------------------------------->
       <div class="avto2_Down_info">
-        <ul>Інноваційна діяльність
+        <p>Інноваційна діяльність</p>
+        <ul>
           <li>Для безаварійного руху без викидів</li>
         </ul>
       </div>
       <!-------------------------------------------------->
       <div class="avto2_Down_info">
-        <ul>Дизайн
+        <p>Дизайн</p>
+        <ul>
           <li>Ми створюємо нову мову дизайну для автомобілів майбутнього</li>
         </ul>
       </div>
@@ -62,31 +67,36 @@
   
 
       <div class="avto2_Down_info">
-        <ul>Спорт
+        <p>Спорт</p>
+        <ul>
           <li>Нездоланне прагнення до досконалості</li>
         </ul>
       </div>
       <!-------------------------------------------------->
       <div class="avto2_Down_info">
-        <ul>Історія
+        <p>Історія</p>
+        <ul>
           <li>Випробуйте радість перемог разом з Mercedes-Benz</li>
         </ul>
       </div>
       <!-------------------------------------------------->
       <div class="avto2_Down_info">
-        <ul>Дилерський центр
+        <p>Дилерський центр</p>
+        <ul>
           <li>Чудові автомобілі, якісний сервіс, авторизоване обслуговування.</li>
         </ul>
       </div>
       <!-------------------------------------------------->
       <div class="avto2_Down_info">
-        <ul>Вакансії автосалону
+        <p>Вакансії автосалону</p> 
+        <ul>
           <li>Перетворіть ваші мрії в реальність! Побудуйте кар'єру в компанії «Мерседес-Бенц»</li>
         </ul>
       </div>
       <!-------------------------------------------------->
       <div class="avto2_Down_info">
-        <ul>Контакти
+        <p>Контакти</p> 
+        <ul> 
           <li>Контакти офіційного дилера Mercedes-Benz</li>
         </ul>
       </div>
@@ -141,8 +151,8 @@
 
 </aside>
 
+
 <div class="Wrapper">
-<!-------------------------------------------------------------------->
 <header id="head_Mers">
 
 <div class="head_left">
@@ -162,5 +172,3 @@
   </div>
 
 </header>
-
-

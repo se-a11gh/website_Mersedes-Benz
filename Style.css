@@ -16,7 +16,9 @@ body::-webkit-scrollbar-thumb {
     background-color: rgb(71, 70, 70);
     border-radius: 3px;
 }
-
+body.page_lock{
+    overflow:hidden;    
+}
 
 :root{
     --index:calc(1vw + 1vh); /*-- Размер --*/
@@ -154,47 +156,54 @@ overflow:hidden;
     background: rgba(1, 1, 1, 0.8);
     z-index: 100;
 }
+.block_PopUP_avto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 435px;
+    height: 400px;
+    border-radius: 6px;
+    padding: 25px 10px 25px 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
 .btnClosePop{
     align-self: flex-end;
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
-.block_PopUP_avto{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 500px;
-    height: 450px;
-    border-radius: 7px;
-    background-color: white;
-    padding: 25px;
-    box-sizing: border-box;
+.PopUP_avto_name{
+    width: 100%;
 }
-.block_PopUP_avto p{
+.PopUP_avto_name p{
     font-size: 20px;
     font-weight: bold;
-    width: 60%;
+    width: 65%;
+    margin-left: 25%;
+
 }
 .PopUP_avto_form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 400px;
-    height: 300px;
+    height: 250px;
 }
 .PopUP_avto_form input{
     width: 100%;
-    height: 35px;
+    height: 45px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 .PopUP_avto_form  .btnPop{
-    height: 40px;
-    border-radius: 5px;
+    height: 65px;
+    border-radius: 4px;
     cursor: pointer;
     transition: background 1s;
     border: none;
-    font-size: 17px;
+    font-size: 20px;
     background-color: #BC8235;
     color: white;
 }
@@ -477,18 +486,20 @@ color: white;
     font-size: 23px;
 }
 
-.btn_slide, .btn_slide_1, .btn_slide_2, .btn_slide_3{
+.btn_slide{
     display: none;
     width: 100%;
-    height: 55px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #BC8235;
+}
+.btn_slide a{
+    display: block;
     color: white;
     font-size: 18px;
-    border-radius: 5px;
-    border: none;
-    background-color: #BC8235;
-    cursor: pointer;
 }
-.btn_slide{
+.btn_sld_1{
     display: block;
 }
 
@@ -674,7 +685,6 @@ color: white;
 .block_go{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     width: 100%;
     height: 550px;
     margin-top: 15px;
@@ -683,15 +693,37 @@ color: white;
     width: 750px;
     height: 500px;
     border-radius: 3px;
-   background-image: url('media/map2.png');
+   background-image: url('media/map3.png');
    background-repeat: no-repeat;
-   background-size: 750px 500px;
+   background-size: 700px 450px;
+
 }
+#svg1 {
+    position: relative;
+    top:78px;
+    left:31px;
+     width: 627px;
+     /* border:1px solid blue; */
+     height: 408px;
+
+  }
+  #svg1 path{
+    stroke-dasharray:987px;
+     stroke-dashoffset:987px;
+     transition: all 7s;
+
+  }
+
+
+
+
+
+
 
 
 
 .block_go_text{
-    width: 45%;
+    width: 500px;
     height: 400px;
     color: white;
     padding: 10px;
@@ -700,65 +732,57 @@ color: white;
     /* border: 1px solid rgb(0, 26, 255); */
 
 }
-.go_text p{
-    font-size: 23px;
-    font-weight: bold;
-}
 .go_text {
-    width: 95%;
+    width: 100%;
     font-size: 17px;
 }
 
+.go_text p{
+    margin: 15px 0px 15px 0px;
+    font-size: 23px;
+    font-weight: bold;
+}
+.go_text p:nth-child(2){
+    font-size: 19px;
+    font-weight: normal;
+}
+
 .go_form{
-    width: 95%;
+    width: 100%;
     height: 250px;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
-    font-size: 20px;
-    margin-left: 15px;
-    /* border: 1px solid red; */
 }
 .go_form input{
     width: 100%;
     height: 40px;
+    padding: 10px;
     box-sizing: border-box;
-    margin-top: 5px;
+    margin: 3px 0px 3px 0px;
     border-radius: 3px;
 }
+.go_form input:focus{
+   box-shadow: 0px 0px 20px rgb(36, 191, 243);
+    outline: none;
+    border: 1px solid rgb(43, 134, 253);
+}
+
+
 .go_form .btn_more{
     width: 100%;
-    height: 55px;
+    height: 65px;
     margin-top: 15px;
     color: white;
     background-color: #BC8235;
-    font-size: 17px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
-
 }
-
-
-
-.pointMove{
-    position: relative;
-    top: 20%;
-    left: 5%;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--colr_R);
-    offset-path: path("M1.59546 151.714L70.9156 138.454L128.273 183.043L176.5 231.254L189 206.5L240.5 231.254L281 240L345 291.351L388 334.5L432.5 309.5L432.5 248L466.5 173.708L501 122L523.5 128.836L565 95.5005L592 52.6207L600 31.5004L600 1.00002");  
-    animation-name: way;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 25s;
-    z-index: 2;
-} 
-
-@keyframes way {
-    0%{offset-distance: 0%;}
-    100%{offset-distance: 102%;}
+.go_form .btn_more:focus{
+    outline: none;
+    box-shadow: none;
+    border:none;
 }
 
 /*--------------------------------------------------------------------------*/
@@ -789,7 +813,7 @@ color: white;
     align-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 675px;
+    height: auto;
 }
 
 .model_auto{
@@ -801,20 +825,29 @@ color: white;
     height: 290px;
     border-radius: 10px;
     border: 1px solid rgb(211, 211, 211);
-    padding: 25px;
-    box-sizing: border-box;
+    /* padding: 25px;
+    box-sizing: border-box; */
+    margin: 15px 0px 15px 0px;
 }
 .model_auto_name{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-.model_auto_name{
-    font-size: calc(var(--index) * 1.6);
+    height: 40px;
+    background-color: #19212d;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 22px;
     font-weight: bold;
 }
-
+.img_ic__next {
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+}
 
 
 .autoType_1{
